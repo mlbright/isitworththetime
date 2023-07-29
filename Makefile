@@ -18,3 +18,7 @@ test: fuzz
 .PHONY: fuzz
 fuzz:
 	cd pkg/timebudget && go test -fuzz FuzzTimeSaved --fuzztime 15s
+
+.PHONY: clean
+clean:
+	git clean -fxd
